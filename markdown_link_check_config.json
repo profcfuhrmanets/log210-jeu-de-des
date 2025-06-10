@@ -2,7 +2,8 @@
     "httpHeaders": [
         {
             "urls": [
-                "https://docs.github.com/"
+                "https://docs.github.com/",
+                "https://stackoverflow.com/"
             ],
             "headers": {
                 "Accept-Encoding": "zstd, br, gzip, deflate"
