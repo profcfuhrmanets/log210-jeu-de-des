@@ -2,8 +2,7 @@
     "httpHeaders": [
         {
             "urls": [
-                "https://docs.github.com/",
-                "https://stackoverflow.com/"
+                "https://docs.github.com/"
             ],
             "headers": {
                 "Accept-Encoding": "zstd, br, gzip, deflate"
@@ -19,6 +18,14 @@
         {
             "pattern": "^https?://www.plantuml.com/.*$",
             "comment": "Ignore PlantUML diagrams (timeout can be long)"
+        },
+        {
+            "pattern": "^https?://stackoverflow.com/.*$",
+            "comment": "Ignore Stack Overflow links that return 403 from GitHub Actions"
+        },
+        {
+            "pattern": "^https?://.*\\.stackexchange.com/.*$",
+            "comment": "Ignore Stack Exchange links that return 403 from GitHub Actions"
         }
     ]
 } 
